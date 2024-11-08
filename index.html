@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Workit</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img src="./img/logo_w.png" alt="workit_logo" />
+				<button id="apply-underl">Apply for access</button>
+			</nav>
+			<h1>Data <span>tailored</span> to your needs.</h1>
+			<button id="learn-g">Learn more</button>
+			<img src="./img/illustration.png" alt="Iphone_11" id="iphone"/>
+		</header>
+		<article id="number-article">
+			<section class="number-sect">
+				<p class="num-brrd">1</p>
+				<h2>Actionable insights</h2>
+				<p class="para_num optimize">
+					Optimize your products, improve customer satisfaction and stay ahead
+					of the competition with our product data analytics.
+				</p>
+			</section>
+			<section class="number-sect">
+				<p class="num-brrd">2</p>
+				<h2>Data-driven decisions</h2>
+				<p class="para_num">
+					Make data-driven decisions with our product data analytics. Our
+					AI-generated reports help you unlock insights hidden in your product
+					data.
+				</p>
+			</section>
+			<section class="number-sect">
+				<p class="num-brrd">3</p>
+				<h2>Always affordable</h2>
+				<p class="para_num always">
+					Always affordable pricing that scales with your business. Get
+					top-quality producmt data analytics services without hidden costs or
+					unexpected fees.
+				</p>
+			</section>
+		</article>
+		<article id="article-person">
+			<section>
+				<img src="./img/person.png" alt="person" />
+				<div id="div_person">
+					<p id="heading_be">Be the first to test</p>
+					<p id="louis">
+						Hi, I'm Louis Graham, the founder of the company. Book a demo call
+						with me to become a beta tester for our app and kickstart your
+						company. Apply for access below and I’ll be in touch to schedule a
+						call.
+					</p>
+					<button id="apply-g" onclick="buttonApply()">Apply for access</button>
+				</div>
+			</section>
+        </article>
+            <footer>
+                <img src="./img/logo_b.png" alt="workit_logo">
+                <div id="icon">
+                    <img src="./img/facebook.png" alt="facebook">
+                    <img src="./img/twitter.png" alt="twitter">
+                    <img src="./img/instagram.png" alt="instagram">
+                </div>
+            </footer>
+            <script> 
+                 function buttonApply() {
+                    let button = document.getElementById("div_person");
+                    button.style.animation = "1s linear 0s alternate test";
+                    setTimeout(()=>{
+                    button.style.animation = "";
+                 }, 1000)
+                 }
+            </script>
+	</body>
+</html>
